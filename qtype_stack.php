@@ -23,7 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-// Translation by Michael Kallweit
+// Translation from english by Michael Kallweit
 
 $string['pluginname'] = 'STACK';
 $string['pluginname_help'] = 'STACK ist ein Assessmentsystem für Mathematik.';
@@ -80,8 +80,8 @@ Soll zu einem nächsten Knoten gesprungen werden, falls ja zu welchen, ansonsten
 ### Antworthinweis
 Dieses Tag dient zur Berichterstattung. Es bestimmt den eindeutigen Pfad durch den Baum und das Ergebnis jeder Antwort. Es wird automatisch erzeugt, kann aber auch manuell zu etwas Sinnvollem geändert werden.
 ';
-$string['feedbackvariables'] = 'Feedback Variablen';
-$string['feedbackvariables_help'] = 'The feedback variables enable you to manipulate any of the inputs, together with the question variables, prior to traversing the tree.  Variables defined here may be used anywhere else in this tree.';
+$string['feedbackvariables'] = 'Feedback-Variablen';
+$string['feedbackvariables_help'] = 'Die Feedback-Variablen erlauben es die Eingabe zusammen mit den Aufgabenvariablen zu manipulieren, bevor der Rückmeldebaum durchlaufen wird. Variablen, die hier definiert werden, können überall im Rückmeldebaum benutzt werden.';
 $string['feedbackvariables_link'] = '%%WWWROOT%%/question/type/stack/doc/doc.php/Authoring/KeyVals.md#Feedback_variables';
 $string['fieldshouldnotcontainplaceholder'] = '{$a->field} sollten keine [[{$a->type}:...]] Platzhalter enthalten.';
 $string['forbidfloat'] = 'Verbiete Fließkommazahlen';
@@ -91,24 +91,24 @@ $string['forbidwords'] = 'Verbotene Wörter ';
 $string['forbidwords_help'] = 'Dies ist eine Komma-separierte Liste von Zeichenketten, die in den Studierendenantworten verboten sind.';
 $string['forbidwords_link'] = '%%WWWROOT%%/question/type/stack/doc/doc.php/Authoring/CASText.md#Forbidden_Words';
 $string['generalfeedback'] = 'Allgemeines Feedback';
-$string['generalfeedback_help'] = 'General feedback is CASText. General feedback, also known as a "worked solution", is shown to the student after they have attempted the question. Unlike feedback, which depends on what response the student gave, the same general feedback text is shown to all students.  It may depend on the question variables used in the version of the question.';
+$string['generalfeedback_help'] = 'Das allgemeine Feedback ist ein CASText. Das allgemeine Feedback, auch Musterlösung genannt, wird den Studierenden nach seinem Beantwortungsversuch gezeigt. Im Gegensatz zum (spezifischen) Feedback wird es allen Studierenden gleichermaßen gezeigt, unabhängig von ihrer eingegebenen Antwort. Hier können Variablen aus dem Aufgabentext verwendet werden.';
 $string['generalfeedback_link'] = '%%WWWROOT%%/question/type/stack/doc/doc.php/Authoring/CASText.md#general_feedback';
-$string['showvalidation'] = 'Show the validation';
-$string['showvalidation_help'] = 'Setting this option displays any validation feedback from this input, including echoing back their expression in traditional two dimensional notation.';
+$string['showvalidation'] = 'Zeige die Validierung';
+$string['showvalidation_help'] = 'Zeigt eine validierte Darstellung der Eingabe an. Dies schließt auch die traditionelle zweidimensionale Darstellung ein.';
 $string['showvalidation_link'] = '%%WWWROOT%%/question/type/stack/doc/doc.php/Authoring/Inputs.md#Show_validation';
-$string['htmlfragment'] = 'You appear to have some HTML elements in your expression.';
-$string['illegalcaschars'] = 'The characters @ and \$ are not allowed in CAS input.';
-$string['inputheading'] = 'Input: {$a}';
-$string['inputtype'] = 'Input type';
-$string['inputtype_help'] = 'This determines the type of the input element, e.g. form field, true/false, text area.';
+$string['htmlfragment'] = 'Sie scheinen HTML-Elemente in ihrem Ausdruck zu verwenden.';
+$string['illegalcaschars'] = 'Die Zeichen @ und \$ sind in der CAS Eingabe nicht erlaubt.';
+$string['inputheading'] = 'Eingabe: {$a}';
+$string['inputtype'] = 'Eingabetyp';
+$string['inputtype_help'] = 'Dies bestimmt die Art des Eingabeelements, z.B. Formularfeld, Wahr/Falsch, oder Textfeld.';
 $string['inputtype_link'] = '%%WWWROOT%%/question/type/stack/doc/doc.php/Authoring/Inputs.md';
-$string['inputtypealgebraic'] = 'Algebraic input';
-$string['inputtypeboolean'] = 'True/False';
-$string['inputtypedropdown'] = 'Drop down list';
-$string['inputtypesinglechar'] = 'Single character';
-$string['inputtypetextarea'] = 'Text area';
+$string['inputtypealgebraic'] = 'Algebraische Eingabe';
+$string['inputtypeboolean'] = 'Wahr/Falsch';
+$string['inputtypedropdown'] = 'Dropdown-Liste';
+$string['inputtypesinglechar'] = 'Einzelnes Zeichen';
+$string['inputtypetextarea'] = 'Textfeld';
 $string['inputtypematrix'] = 'Matrix';
-$string['insertstars'] = 'Insert stars';
+$string['insertstars'] = 'Sternchen einfügen';
 $string['insertstars_help'] = 'If set to yes then the system will automatically insert *s into any patterns identified by Strict Syntax.  Otherwise, it shows an error.';
 $string['insertstars_link'] = '%%WWWROOT%%/question/type/stack/doc/doc.php/Authoring/Inputs.md#Insert_Stars';
 $string['multiplicationsign'] = 'Multiplication sign';
@@ -317,54 +317,56 @@ $string['testthisvariant'] = 'Switch to test this variant';
 $string['undeploy'] = 'Un-deploy';
 
 // Support scripts (CAS chat, healthcheck, etc.)
-$string['all'] = 'All';
-$string['chat'] = 'Send to the CAS';
-$string['chat_desc'] = 'The <a href="{$a->link}">CAS chat script</a> lets you test the connection to the CAS, and try out Maxima syntax.';
-$string['chatintro'] = 'This page enables CAS text to be evaluated directly. It is a simple script which is a useful minimal example, and a handy way to check if the CAS is working, and to test various inputs.';
-$string['chattitle'] = 'Test the connection to the CAS';
-$string['clearthecache'] = 'Clear the cache';
-$string['healthcheck'] = 'STACK healthcheck';
-$string['healthcheck_desc'] = 'The <a href="{$a->link}">healthcheck script</a> helps you verify that all aspects of Stack are working properly.';
-$string['healthcheckcache_db'] = 'CAS results are being cached in the database.';
-$string['healthcheckcache_none'] = 'CAS results are not being cached.';
-$string['healthcheckcachestatus'] = 'The cache currently contains {$a} entries.';
-$string['healthcheckconfig'] = 'Maxima configuration file';
-$string['healthcheckconfigintro1'] = 'Found, and using, Maxima in the following directory:';
-$string['healthcheckconfigintro2'] = 'Trying to automatically write the Maxima configuration file.';
-$string['healthcheckconnect'] = 'Trying to connect to the CAS';
-$string['healthcheckconnectintro'] = 'We are trying to evaluate the following CAS text:';
-$string['healthchecklatex'] = 'Check LaTeX is being converted correctly';
-$string['healthchecklatexintro'] = 'STACK generates LaTeX on the fly, and enables teachers to write LaTeX in questions. It assumes that LaTeX will be converted by a moodle filter.  Below are samples of displayed and inline expressions in LaTeX which should be appear correctly in your browser.  Problems here indicate incorrect moodle filter settings, not faults with STACK itself. Stack only uses the single and double dollar notation itself, but some question authors may be relying on the other forms.';
-$string['healthchecklatexmathjax'] = 'One way to get equiation rendering to work is to copy the following code into the <b>Within HEAD</b> setting on <a href="{$a}">Additional HTML</a>.';
-$string['healthcheckmaximabat'] = 'The maxima.bat file is missing';
-$string['healthcheckmaximabatinfo'] = 'This script tried to automatically copy the maxima.bat script from inside "C:\Program files\Maxima-1.xx.y\bin" into "{$a}\stack". However, this seems not to have worked. Please copy this file manually.';
-$string['healthcheckplots'] = 'Graph plotting';
-$string['healthcheckplotsintro'] = 'There should be two different plots.  If two identical plots are seen then this is an error in naming the plot files. If no errors are returned, but a plot is not displayed then one of the following may help.  (i) check read permissions on the two temporary directories. (ii) change the options used by GNUPlot to create the plot. Currently there is no web interface to these options.';
-$string['stackInstall_testsuite_title'] = 'A test suite for STACK Answer tests';
-$string['stackInstall_testsuite_title_desc'] = 'The <a href="{$a->link}">answer-tests script</a> verifies that the answer tests are performing correctly. They are also useful to learn by example how each answer-test can be used.';
-$string['stackInstall_testsuite_intro'] = 'This page allows you to test that the STACK answer tests are functioning correctly.  Note that only answer tests can be checked through the web interface.  Other Maxima commands need to be checked from the command line: see unittests.mac.';
-$string['stackInstall_testsuite_choose'] = 'Please choose an answer test.';
-$string['stackInstall_testsuite_pass'] = 'All tests passed!';
-$string['stackInstall_testsuite_fail'] = 'Not all tests passed!';
-$string['answertest'] = 'Answer test';
-$string['answertest_help'] = 'An answer test is used to compare two expressions to establish whether they satisfy some mathematical criteria.';
+$string['all'] = 'Alles';
+$string['chat'] = 'Sende zum CAS';
+$string['chat_desc'] = 'Das <a href="{$a->link}">CAS Chat Skript</a> erlaubt es die Verbindung zum CAS zu testen, und die Maxima Syntax auszuprobieren.';
+$string['chatintro'] = 'Diese Seite aktiviert die direkte Auswertung von CAS Text. Dieses einfache Skript dient als Minimalbeispiel und erlaubt das CAS und die verschiedenen Eingabeformate zu testen.';
+$string['chattitle'] = 'Teste die Verbindung zum CAS';
+$string['clearthecache'] = 'Cache löschen';
+$string['healthcheck'] = 'STACK Funktionscheck';
+$string['healthcheck_desc'] = 'Das <a href="{$a->link}">Funktionscheckskript</a> hilft ihnen zu überprüfen, ob die Bestandteile von STACK reibungslos funktionieren.';
+$string['healthcheckcache_db'] = 'CAS Ergebnisse werden in der Datenbank gecached.';
+$string['healthcheckcache_none'] = 'CAS Ergebnisse werden nicht gecached.';
+$string['healthcheckcachestatus'] = 'Der Cache enthält momentan {$a} Einträge.';
+$string['healthcheckconfig'] = 'Maxima Konfigurationsdatei';
+$string['healthcheckconfigintro1'] = 'Finde und verwende Maxima in folgendem Verzeichnis:';
+$string['healthcheckconfigintro2'] = 'Versuche die Maxima Konfigurationsdatei automatisch anzulegen.';
+$string['healthcheckconnect'] = 'Versuche zum CAS zu verbinden';
+$string['healthcheckconnectintro'] = 'Es wird versucht folgenden CAS-Text auszuwerten:';
+$string['healthchecklatex'] = 'Überprüfen sie, ob LaTeX korrekt konvertiert wurde';
+$string['healthchecklatexintro'] = 'STACK generiert LaTeX on-the-fly und ermöglichst es LaTeX-Code in Aufgabentexten zu verwenden. Es wird angenommen, das der Code vom Moodle TeX Filter konvertiert wird.
+Unten sind ein paar Beispiele für abgesetzte und inline Formeln in LaTeX, die im Browser korrekt angezeigt werden sollten. Fehler an dieser Stelle, zeigen Probleme mit dem Moodle-Filter auf, nicht von STACK selbst.
+STACK selbst nutzt die einfache und Doppeldollar Notation, aber eventuell verwenden manche Frage-Autoren eine andere Notation.';
+$string['healthchecklatexmathjax'] = 'Eine Möglichkeit das Rendern der Formeln zu ermöglichen ist, folgenden Code in den Abschnitt <b>Innerhalb HEAD</b> bei den Einstellungen zum <a href="{$a}">Zusätzliches HTML</a> einzufügen.';
+$string['healthcheckmaximabat'] = 'Die Datei maxima.bat fehlt.';
+$string['healthcheckmaximabatinfo'] = 'Dieses Skript kopiert automatisch die Datei maxima.bat von "C:\Program files\Maxima-1.xx.y\bin" nach "{$a}\stack". Dies hat allerdings nicht funktioniert. Bitte kopieren sie die Datei manuell.';
+$string['healthcheckplots'] = 'Graphiken zeichnen';
+$string['healthcheckplotsintro'] = 'Es sollten zwei verschiedene Graphiken erscheinen. Wenn zwei gleiche Graphiken zu sehen sind, dann zeigt dies einen Fehler in der Benennung der Graphikdateien an. Falls keine Fehler auftauchen, aber eine Graphik fehlt, könnten folgende Hinweise hilfreich sein: (i) Überprüfen sie die Rechteeinstellungen (insbesondere Leserechte) der zwei temporären Verzeichnise. (ii) Ändern sie Optionen mit denen GNUPlot die Graphiken erstellt. Momentan gibt es ein Webinterface dafür.';
+$string['stackInstall_testsuite_title'] = 'Eine Testumgebung für STACK Antwortüberprüfungen';
+$string['stackInstall_testsuite_title_desc'] = 'Das <a href="{$a->link}">Antwortüberprüfungsskript</a> überprüft, dass die Antwortüberprüfungen korrekt funktionieren. Diese sind auch als Praxisbeispiele für eigene Anpassungen sehr hilfreich.';
+$string['stackInstall_testsuite_intro'] = 'Diese Seite erlaubt einen Korrektheitstest von STACKs Antwortüberprüfungen. Beachten sie, dass nur Antwortüberprüfungen über das Webinterface getestet werden können. Andere Maxima Befehle müssen separat per Kommandozeile getestet werden: siehe unittests.mac.';
+$string['stackInstall_testsuite_choose'] = 'Bitte wählen sie eine Antwortüberprüfung.';
+$string['stackInstall_testsuite_pass'] = 'Alle Tests bestanden!';
+$string['stackInstall_testsuite_fail'] = 'Nicht alle Tests bestanden!';
+$string['answertest'] = 'Antwortüberprüfung';
+$string['answertest_help'] = 'Eine Antwortüberprüfung ist ein Test um zwei Ausdrücke dahingehend zu vergleichen, ob sie bestimmte mathematische Eigenschaften erfüllen.';
 $string['answertest_link'] = '%%WWWROOT%%/question/type/stack/doc/doc.php/Authoring/Answer_tests.md';
-$string['testsuitecolpassed'] = 'Passed?';
-$string['studentanswer'] = 'Student response';
-$string['teacheranswer'] = 'Teacher answer';
+$string['testsuitecolpassed'] = 'Bestanden?';
+$string['studentanswer'] = 'Studierendeneingabe';
+$string['teacheranswer'] = 'Musterlösung';
 $string['options'] = 'Optionen';
 $string['testsuitefeedback'] = 'Feedback';
 $string['testsuitecolerror'] = 'CAS Fehler';
-$string['testsuitecolrawmark'] = 'Raw mark';
-$string['testsuitecolexpectedscore'] = 'Expected mark';
-$string['testsuitepass'] = 'Pass';
-$string['testsuitefail'] = 'Fail';
-$string['testsuitenotests']       = 'Number of tests: {$a->no}. ';
-$string['testsuiteteststook']     = 'Tests took {$a->time} Sekunden. ';
+$string['testsuitecolrawmark'] = 'Raw Punkte';
+$string['testsuitecolexpectedscore'] = 'Erwartete Punkte';
+$string['testsuitepass'] = 'Bestanden';
+$string['testsuitefail'] = 'Durchgefallen';
+$string['testsuitenotests']       = 'Anzahl der Tests: {$a->no}. ';
+$string['testsuiteteststook']     = 'Tests dauerten {$a->time} Sekunden. ';
 $string['testsuiteteststookeach'] = 'Durchschnitt pro Test: {$a->time} Sekunden. ';
-$string['stackInstall_input_title'] = "A test suite for validation of student's input";
+$string['stackInstall_input_title'] = "Eine Testumgebung für die Validierung von Studierendeneingaben";
 $string['stackInstall_input_title_desc'] = 'The <a href="{$a->link}">input-tests script</a> provides test cases of how STACK interprests mathematical expressions.  They are also useful to learn by example.';
-$string['stackInstall_input_intro'] = "This page allows you to test how STACK interprets various inputs from a student.  This currently only checks with the most liberal settings, trying to adopt an informal syntax and insert stars.  <br />'V' columns record validity as judged by PHP and the CAS.  V1 = PHP valid, V2 = CAS valid.";
+$string['stackInstall_input_intro'] = "Auf dieser Seite lässt sich testen, wie STACK die verschiedenen Studierendeneingaben interpretiert. Momentan geschieht dies nur mit sehr größzügigen Einstellungen, um eine möglichst informale Syntax anzuwenden und Sternchen einzufügen. <br />'V' Spalten zeigen die Validität bzgl. PHP und dem CAS an.  V1 = PHP valid, V2 = CAS valid.";
 $string['phpvalid'] = 'V1';
 $string['phpcasstring'] = 'PHP Ausgabe';
 $string['phpsuitecolerror'] = 'PHP Fehler';
@@ -375,8 +377,8 @@ $string['casvalue'] = 'CAS Wert';
 $string['casdisplay'] = 'CAS Anzeige';
 $string['cassuitecolerrors'] = 'CAS Fehler';
 
-$string['texdisplayedbracket'] = 'Displayed bracket';
-$string['texinlinebracket'] = 'Inline bracket';
+$string['texdisplayedbracket'] = 'Klammer für abgesetzte Formeln';
+$string['texinlinebracket'] = 'Klammer für inline Formeln';
 $string['texdoubledollar'] = 'Doppeltes Dollarzeichen';
 $string['texsingledollar'] = 'Einfaches Dollarzeichen';
 
