@@ -233,8 +233,7 @@ Whether to go to another node, and if so which, or stop.
 This is a tag which is key for reporting purposes.  It is designed to record the unique path through the tree, and the outcome of each answer test.  This is automatically generated, but can be changed to something meaningful.
 ';
 $string['variantsselectionseed'] = 'Zufallsgruppe';
-$string['variantsselectionseed_help'] = 'Normalerweise kann dies leer gelassen werden.
-Normally you can leave this box blank. If, however, you want two different questions in a quiz to use the same random seed, then type the same string in this box for the two questions (and deploy the same set of random seeds, if you are using deployed versions) and the random seeds for the two questions will be synchronised.';
+$string['variantsselectionseed_help'] = 'Normalerweise kann dies leer gelassen werden. If, however, you want two different questions in a quiz to use the same random seed, then type the same string in this box for the two questions (and deploy the same set of random seeds, if you are using deployed versions) and the random seeds for the two questions will be synchronised.';
 $string['verifyquestionandupdate'] = 'Verify the question text and update the form';
 
 // Strings used by input elements.
@@ -243,44 +242,45 @@ $string['dropdowngotunrecognisedvalue'] = 'Ungültige Eingabe.';
 $string['singlechargotmorethanone'] = 'Sie können hier nur ein Zeichen eingeben.';
 
 // Admin settings.
-$string['settingcasdebugging'] = 'CAS debugging';
+$string['settingcasdebugging'] = 'CAS Debugging';
 $string['settingcasdebugging_desc'] = 'Whether to store debugging information about the CAS connection.';
-$string['settingcasmaximaversion'] = 'Maxima version';
-$string['settingcasmaximaversion_desc'] = 'The version of Maxima being used.';
-$string['settingcasresultscache'] = 'CAS result caching';
-$string['settingcasresultscache_db'] = 'Cache in the database';
-$string['settingcasresultscache_desc'] = 'This setting determines whether calls the to CAS are cached. This setting should be turned on unless you are doing development that involves changing the Maxima code. The current state of the cache is shown on the healthcheck page.  If you change your settings, e.g. the gnuplot command, you will need to clear the cache before you can see the effects of these changes.';
-$string['settingcasresultscache_none'] = 'Do not cache';
-$string['settingcastimeout'] = 'CAS connection timeout';
-$string['settingcastimeout_desc'] = 'The timout to use when trying to connect to Maxima.';
-$string['settingplatformtype'] = 'Platform type';
-$string['settingplatformtype_desc'] = 'Stack needs to know what sort of operating system it is running on. The Server and MaximaPool options give better performance at the cost of having to set up an additional server. The option "Linux (optimised)" is explained on the Optimising Maxima page in the documentation.';
+$string['settingcasmaximaversion'] = 'Maxima Version';
+$string['settingcasmaximaversion_desc'] = 'Die Version vom verwendeten Maxima.';
+$string['settingcasresultscache'] = 'CAS Ergebnis Caching';
+$string['settingcasresultscache_db'] = 'Cache in der Datenbank';
+$string['settingcasresultscache_desc'] = 'Diese Einstellung bestimmt, ob Aufrufe zum CAS gecached werden. Dies sollte im Normalfall eingeschaltet sein. Außnahmen betreffen die Weiterentwicklung des Maxima Codes.
+Der aktuelle Status des Cache wird auf der Funktionstests-Seite angezeigt. Wenn sie Einstellungen ändern, z.B. das GNUPlot-Kommando, so muss der Cache erst geleert werden, damit die Änderungen Wirkung zeigen.';
+$string['settingcasresultscache_none'] = 'Kein Cache';
+$string['settingcastimeout'] = 'Zeitüberschreitung der CAS-Verbindung';
+$string['settingcastimeout_desc'] = 'Timeout für die Verbindungsversuche zu Maxima.';
+$string['settingplatformtype'] = 'Plattform';
+$string['settingplatformtype_desc'] = 'STACK benötigt die Angabe des Betriebssystem, auf dem es läuft. Die Server und MaximaPool Optionen geben bessere Performance, wofür aber weitere Server eingerichtet werden müssen. Die Option "Linux (optimiert)" ist in der Dokumentation unter "Optimising Maxima" erklärt.';
 $string['settingplatformtypeunix'] = 'Linux';
-$string['settingplatformtypeunixoptimised'] = 'Linux (optimised)';
+$string['settingplatformtypeunixoptimised'] = 'Linux (optimiert)';
 $string['settingplatformtypewin']  = 'Windows';
 $string['settingplatformtypeserver'] = 'Server';
 $string['settingplatformtypemaximapool'] = 'MaximaPool';
-$string['settingplatformmaximacommand'] = 'Maxima command';
-$string['settingplatformmaximacommand_desc'] = 'Stack needs to know the shell command to start Maxima.  If this is blank, Stack will make an educated guess.';
-$string['settingplatformplotcommand'] = 'Plot command';
-$string['settingplatformplotcommand_desc'] = 'Stack needs to know the gnuplot command.  If this is blank, Stack will make an educated guess.';
+$string['settingplatformmaximacommand'] = 'Maxima Kommando';
+$string['settingplatformmaximacommand_desc'] = 'STACK benötigt den Shellbefehl zum Starten von Maxima. Wenn leer, versucht STACK sinnvoll zu raten.';
+$string['settingplatformplotcommand'] = 'Plot Kommando';
+$string['settingplatformplotcommand_desc'] = 'STACK benötigt den Shellbefehl zum Starten von GNUPlot. Wenn leer, versucht STACK sinnvoll zu raten.';
 
 // Strings used by interaction elements.
 $string['false'] = 'Falsch';
 $string['notanswered'] = 'Nicht beantwortet.';
 $string['true'] = 'Wahr';
-$string['ddl_empty'] = 'No choices were provided for this drop-down. Please input a set of values link a,b,c,d';
+$string['ddl_empty'] = 'Es wurden keine Auswahlmöglichkeiten für dieses DropDown-Feld angegeben. Bitte geben sie welche ein (a,b,c,d)';
 
 // Strings used by the question test script.
-$string['addanothertestcase'] = 'Add another test case...';
-$string['addatestcase'] = 'Add a test case...';
+$string['addanothertestcase'] = 'Weiteren Testfall hinzufügen...';
+$string['addatestcase'] = 'Testfall hinzufügen...';
 $string['addingatestcase'] = 'Adding a test case to question {$a}';
 $string['completetestcase'] = 'Fill in the rest of the form to make a passing test-case';
-$string['createtestcase'] = 'Create test case';
+$string['createtestcase'] = 'Testfall erstellen';
 $string['currentlyselectedvariant'] = 'This is the variant shown below';
 $string['deletetestcase'] = 'Delete test case {$a->no} for question {$a->question}';
 $string['deletetestcaseareyousure'] = 'Are you sure you want to delete test case {$a->no} for question {$a->question}?';
-$string['deletethistestcase'] = 'Delete this test case...';
+$string['deletethistestcase'] = 'Lösche diesen Testfall...';
 $string['deploy'] = 'Deploy';
 $string['deployedvariantoptions'] = 'The following variants have been deployed:';
 $string['deployedvariants'] = 'Deployed variants';
