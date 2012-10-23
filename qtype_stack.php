@@ -28,7 +28,7 @@ $string['pluginname'] = 'STACK';
 $string['pluginname_help'] = 'STACK ist ein Assessmentsystem für Mathematik.';
 $string['pluginnameadding'] = 'STACK-Frage hinzufügen';
 $string['pluginnameediting'] = 'STACK-Frage bearbeiten';
-$string['pluginnamesummary'] = 'STACK ermöglicht es mathematische Fragestellungen in Moodle-Tests zu verwenden. Es verwendet ein Computeralgebrasystem um mathematische Eigenschaften der eingegebenen Antworten zu ermitteln und diese dann zu bewerten.';
+$string['pluginnamesummary'] = 'STACK ermöglicht es mathematische Fragestellungen in Moodle-Tests zu verwenden. Es bedient sich dabei eines Computeralgebrasystems um mathematische Eigenschaften der eingegebenen Antworten zu ermitteln und diese dann zu bewerten.';
 
 // General strings.
 $string['errors'] = 'Fehler';
