@@ -16,14 +16,13 @@
 
 
 /**
- * Language strings for the Stack question type.
+ * German Language strings for the Stack question type.
  *
  * @package    qtype_stack
- * @copyright  2012 The Open University
+ * @copyright  2012 Michael Kallweit
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-// Translation from english by Michael Kallweit
 
 $string['pluginname'] = 'STACK';
 $string['pluginname_help'] = 'STACK ist ein Assessmentsystem für Mathematik.';
