@@ -482,7 +482,7 @@ $string['irred_Q_commonint']        = 'Sie müssen noch einen gemeinsamen Faktor
 $string['irred_Q_optional_fac']     = 'Sie könnten noch etwas vereinfachen, so kann {$a->m0} weiter faktorisiert werden. Allerdings ist dies nicht verlangt. ';
 
 $string['FacForm_UnPick_morework']  = 'Sie könnten noch etwas an dem Term {$a->m0} arbeiten. ';
-$string['FacForm_UnPick_intfac']    = $string['irred_Q_commonint'];
+$string['FacForm_UnPick_intfac']    = 'Sie müssen noch einen gemeinsamen Faktor ausklammern. ';
 
 $string['ATFacForm_error_list']     = 'Die Antwortüberprüfung ist fehlgeschlagen. Bitte konktaktieren sie ihren Systemadministrator.';
 $string['ATFacForm_error_degreeSA'] = 'Das CAS konnte den algebraischen Grad ihrer Antwort nicht ermitteln.';
@@ -490,14 +490,14 @@ $string['ATFacForm_isfactored']     = 'Ihre Anwort ist faktorisiert. Gut gemacht
 $string['ATFacForm_notfactored']    = 'Ihre Antwort ist nicht faktorisiert. '; // Needs a space at the end.
 $string['ATFacForm_notalgequiv']    = 'Ihre Antwort ist nicht algebraisch äquivalent zur korrekten Antwort. Sie haben etwas falsch gemacht. '; // needs a space at the end.
 
-$string['ATPartFrac_error_list']        = $string['ATFacForm_error_list'];
+$string['ATPartFrac_error_list']        = 'Die Antwortüberprüfung ist fehlgeschlagen. Bitte konktaktieren sie ihren Systemadministrator.';
 $string['ATPartFrac_true']              = '';
 $string['ATPartFrac_single_fraction']   ='Ihre Antwort ist ein einzelner Bruch, es muss aber ein partieller Bruch sein. ';
 $string['ATPartFrac_diff_variables']    ='Verwenden sie in ihrer Antwort die Variablen aus der Aufgabenstellung!';
 $string['ATPartFrac_denom_ret']         ='Schreibt man ihre Antwort als einen einzelnen Bruch, so lautet der Nenner: {$a->m0}. Allerdings wäre {$a->m1} richtig. ';
 $string['ATPartFrac_ret_expression']    ='Ihre Antwort als einzelner Bruch lautet: {$a->m0} ';
 
-$string['ATSingleFrac_error_list']     = $string['ATFacForm_error_list'];
+$string['ATSingleFrac_error_list']     = 'Die Antwortüberprüfung ist fehlgeschlagen. Bitte konktaktieren sie ihren Systemadministrator.';
 $string['ATSingleFrac_true']           = '';
 $string['ATSingleFrac_part']           = 'Ihre Antwort muss ein einzelner Bruch der Form \( {a}\over{b} \) sein. ';
 $string['ATSingleFrac_var']            = 'Verwenden sie in ihrer Antwort die Variablen aus der Aufgabenstellung!';
@@ -510,7 +510,7 @@ $string['ATCompSquare_not_AlgEquiv']    = 'Ihre Antwort scheint in der richtigen
 $string['ATCompSquare_false_no_summands']     = 'Das vollständige Quadrat ist von der Form \( a(\cdots\cdots)^2 + b\) wobei \(a\) und \(b\) nicht von ihrer Variablen abhängen. Mehr als eine ihrer Summanden scheint von der Variablen aus ihrer Antwort abzuhängen.';
 
 
-$string['ATInt_error_list']         = $string['ATFacForm_error_list'];
+$string['ATInt_error_list']         = 'Die Antwortüberprüfung ist fehlgeschlagen. Bitte konktaktieren sie ihren Systemadministrator.';
 $string['ATInt_const_int']          = 'Sie müssen eine Konstante bei der Stammfunktion angeben. Dies sollte eine beliebige Konstante sein und kein fester Wert.';
 $string['ATInt_const']              = 'Sie müssen eine Konstante bei der Stammfunktion angeben. Ansonsten sieht alles richtig aus. Gut gemacht!';
 $string['ATInt_EqFormalDiff']       = 'Die formale Ableitung ihrer Antwort stimmt mit den Ausdruck überein, den sie laut Aufgabenstellung integrieren sollten. Allerdings weicht ihre Antwort signifikant von der richtigen Antwort ab (d.h. nicht nur eine unterschiedliche Konstante). Bitte fragen sie bei ihrem Kursleiter nach.';
@@ -518,10 +518,10 @@ $string['ATInt_wierdconst']         = 'Die formale Ableitung ihrer Antwort stimm
 $string['ATInt_diff']               = 'Vermutlich haben sie stattdessen abgeleitet!';
 $string['ATInt_generic']            = 'Die formale Ableitung ihrer Antwort sollte mit den Ausdruck übereinstimmen, den sie laut Aufgabenstellung integrieren sollten: Also {$a->m0}. Aber die Ableitung ihrer Antwort nach {$a->m1} ist: {$a->m2}. Daher haben sie etwas falsch gemacht!';
 
-$string['ATDiff_error_list']        = $string['ATFacForm_error_list'];
+$string['ATDiff_error_list']        = 'Die Antwortüberprüfung ist fehlgeschlagen. Bitte konktaktieren sie ihren Systemadministrator.';
 $string['ATDiff_int']               = 'Vermutlich haben sie stattdessen integriert!';
 
-$string['ATNumSigFigs_error_list']        = $string['ATFacForm_error_list'];
+$string['ATNumSigFigs_error_list']        = 'Die Antwortüberprüfung ist fehlgeschlagen. Bitte konktaktieren sie ihren Systemadministrator.';
 $string['ATNumSigFigs_NotDecimal']  = 'Ihre Antwort sollte eine Dezimalzahl sein; ist sie aber nicht! ';
 $string['ATNumSigFigs_Inaccurate']  = 'Die Genauigkeit ihrer Antwort ist nicht korrekt. Entweder haben sie das Endergebnis oder einen Zwischenwert falsch gerundet.';
 $string['ATNumSigFigs_WrongDigits'] = 'Ihre Antwort hat die falsche Anzahl an Dezimalstellen.. ';
@@ -544,7 +544,7 @@ $string['stackQuestion_noQuestionParts']        = 'Dieses Element hat keine Frag
 // Documentation strings.
 $string['stackDoc_404']                 = 'Fehler 404';
 $string['stackDoc_docs']                = 'STACK Dokumentation';
-$string['stackDoc_docs_desc']           = '<a href="{$a->link}">Dokumentation von STACK</a>: Lokales (umveränderliches) Wiki.';
+$string['stackDoc_docs_desc']           = '<a href="{$a->link}">Dokumentation von STACK</a>: Lokales (unveränderliches) Wiki.';
 $string['stackDoc_home']                = 'Dokumentation Anfang';
 $string['stackDoc_index']               = 'Kategorieindex';
 $string['stackDoc_parent']              = 'Vorheriges';
